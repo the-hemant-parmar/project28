@@ -9,12 +9,12 @@ import re
 app = Flask(__name__)
 
 
-app.secret_key = "hemantparmar"
+app.secret_key = "<SECRET_KEY e.g. hemantparmar>"
 
 app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "9203846427"
-app.config["MYSQL_DB"] = "project28"
+app.config["MYSQL_PASSWORD"] = "<YOUR_PASSWORD e.g. 9203846427>"
+app.config["MYSQL_DB"] = "<DB_NAME e.g. project28>"
 
 mysql = MySQL(app)
 
